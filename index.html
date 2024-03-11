@@ -2,11 +2,14 @@
 <html lang="sv">
   <head>
     <title>Assignment 3, Lucas Mårdby</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="design.css" />
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>Assignment 3</h1>
+    <header>
+      <h1>Assignment 3 - Forms</h1>
+      <pre>by Lucas Mårdby</pre>
+    </header>
     <form method="get" action="http://webshare.mah.se/tszagh/response.php">
       <fieldset>
         <legend>Kontaktuppgifter</legend>
@@ -17,19 +20,19 @@
             class="text"
             name="name"
             placeholder="Ditt namn..."
+            maxlength="30"
             required
             autofocus
           />
         </label>
-        <br />
+        <br /><br />
         <label
           >Ålder
           <input
-            type="text"
-            class="text"
+            type="number"
+            class="age"
             name="age"
             placeholder="Din ålder..."
-            required
         /></label>
       </fieldset>
       <fieldset>
@@ -41,16 +44,11 @@
             name="freq"
             value="varje dag"
             checked="checked"
-            required
           />Varje dag</label
         ><br />
         <label
-          ><input
-            type="radio"
-            name="freq"
-            value="varannan dag"
-            required
-          />Varannan dag</label
+          ><input type="radio" name="freq" value="varannan dag" />Varannan
+          dag</label
         ><br />
         <label
           ><input type="radio" name="freq" value="varje vecka" required />Varje
@@ -87,7 +85,7 @@
           Ni har möjligheten att vinna en T-shirt om ni fyller i följande
           information!
         </p>
-        <label for=""
+        <label
           >Bästa med blomstermålabladet: <br /><textarea
             name="best"
             cols="30"
@@ -95,29 +93,29 @@
           ></textarea>
         </label>
         <br />
-        <label for=""
+        <label
           >Sämsta med blomstermålabladet: <br /><textarea
             name="worst"
             cols="30"
             rows="5"
           ></textarea></label
-        ><br />
+        ><br /><br />
         <label
           >Epost
           <input
-            type="text"
-            class="text"
+            type="email"
+            class="email"
             name="email"
-            placeholder="mail@example.com"
+            placeholder="t.ex. mail@example.com"
           /> </label
-        ><br />
-        <label for="">Storlek</label>
-        <select name="size" size="1">
-          <option value="1">XS</option>
-          <option value="2">S</option>
-          <option value="3" selected="selected">M</option>
-          <option value="4">L</option>
-          <option value="5">XL</option>
+        ><br /><br />
+        <label>Storlek</label>
+        <select name="size" size="1" class="text">
+          <option value="xs">XS</option>
+          <option value="s">S</option>
+          <option value="m" selected="selected">M</option>
+          <option value="l">L</option>
+          <option value="xl">XL</option>
         </select>
       </fieldset>
       <fieldset>
