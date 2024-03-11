@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>Assignment 3, Lucas Mårdby</title>
+    <link rel="stylesheet" href="" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Assignment 3</h1>
+    <form method="get" action="http://webshare.mah.se/tszagh/response.php">
+      <fieldset>
+        <legend>Kontaktuppgifter</legend>
+        <label
+          >Namn
+          <input
+            type="text"
+            class="text"
+            name="name"
+            placeholder="Ditt namn..."
+            required
+            autofocus
+          />
+        </label>
+        <br />
+        <label
+          >Ålder
+          <input
+            type="text"
+            class="text"
+            name="age"
+            placeholder="Din ålder..."
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Dina besök på blomstermålabladet</legend>
+        <p>Hur ofta besöker du blomstermålabladet?</p>
+        <label
+          ><input
+            type="radio"
+            name="freq"
+            value="varje dag"
+            checked="checked"
+            required
+          />Varje dag</label
+        ><br />
+        <label
+          ><input
+            type="radio"
+            name="freq"
+            value="varannan dag"
+            required
+          />Varannan dag</label
+        ><br />
+        <label
+          ><input type="radio" name="freq" value="varje vecka" required />Varje
+          vecka</label
+        ><br />
+        <p>Vilka delar av blomstermålabladet brukar du besöka?</p>
+        <label
+          ><input type="checkbox" name="visits" value="nyheter" />Nyheter</label
+        ><br />
+        <label
+          ><input type="checkbox" name="visits" value="utrikes" />Utrikes</label
+        ><br />
+        <label
+          ><input type="checkbox" name="visits" value="inrikes" />Inrikes</label
+        ><br />
+        <label><input type="checkbox" name="visits" value="sport" />Sport</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="visits"
+            value="skvaller"
+          />Skvaller</label
+        ><br />
+        <label><input type="checkbox" name="visits" value="väder" />Väder</label
+        ><br />
+        <label
+          ><input type="checkbox" name="visits" value="övrigt" />Övrigt</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Vinn en T-shirt!</legend>
+        <p>
+          Ni har möjligheten att vinna en T-shirt om ni fyller i följande
+          information!
+        </p>
+        <label for=""
+          >Bästa med blomstermålabladet: <br /><textarea
+            name="best"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </label>
+        <br />
+        <label for=""
+          >Sämsta med blomstermålabladet: <br /><textarea
+            name="worst"
+            cols="30"
+            rows="5"
+          ></textarea></label
+        ><br />
+        <label
+          >Epost
+          <input
+            type="text"
+            class="text"
+            name="email"
+            placeholder="mail@example.com"
+          /> </label
+        ><br />
+        <label for="">Storlek</label>
+        <select name="size" size="1">
+          <option value="1">XS</option>
+          <option value="2">S</option>
+          <option value="3" selected="selected">M</option>
+          <option value="4">L</option>
+          <option value="5">XL</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Skicka/Återställ</legend>
+        <button type="submit">Skicka</button>
+        <button type="reset">Återställ formulär</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
